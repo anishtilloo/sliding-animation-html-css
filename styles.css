@@ -1,0 +1,72 @@
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url(/static/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: Montserrat-Medium;
+  src: url(/static/Montserrat-Medium.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat-Regular';
+    color: #fff;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    /* position: relative; */
+    height: 100%;
+    width: 100%;
+    background-color: #dadada;
+}
+
+.center {
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 48%;
+    height: 70%;
+}
+
+.image-container {
+    overflow: hidden;
+    position: absolute;
+    width: 0%;
+    height: 100%;
+}
+
+.image-container img {
+    /* width: 100%; */
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-container {
+    position: absolute;
+    z-index: 999;
+    width: 400px;
+    height: 50px; 
+    overflow: hidden; 
+
+    top: 80%;
+    left: -5%;
+
+    padding: 0 40px;
+}
+
+.text-container h1 {
+    top: 50px;
+    font-size: 2.5vw;
+    position: absolute;
+    padding: 5px;
+    color: #000;
+}
